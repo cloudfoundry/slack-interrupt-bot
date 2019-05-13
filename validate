@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -eu
+
+basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+version=0.1.0
+execdir="$basedir/tmp/delegatebot-$version"
+
+if [[ ! -e "$execdir/delegatebot" ]]; then
+  date="date -u +%Y-%m-%dT%H:%M:%SZ"
+  echo "[$( $date )] delegatebot/$version: installing" >&2
+
+  mkdir -p "$execdir"
+  wget -qO "$execdir/delegatebot" "https://github.com/dpb587/slack-delegate-bot/releases/download/v$version/delegatebot-$version-darwin-amd64" # TODO linux
+  chmod +x "$execdir/delegatebot"
+
+  echo "[$( $date )] delegatebot/$version: installed" >&2
+fi
+
+"$execdir/delegatebot" \
+  --config=config/*.yml \
+  --config=config/default.delegatebot \
+  validate
+
+echo 'Everything looks good!'

@@ -3,7 +3,7 @@ Configuration for the `@interrupt` bot in [cloudfoundry.slack.com](slack.cloudfo
  * running with [dpb587/slack-delegate-bot](https://github.com/dpb587/slack-delegate-bot)
  * deployed on [Pivotal Web Services](https://run.pivotal.io/)
 
-To add new behavior, send a pull request.
+To change behavior, add or update your team in the [`config` directory](./config), run the [`validate`](./validate) script, and then send a pull request with your improvements.
 
 ---
 
