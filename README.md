@@ -5,6 +5,11 @@ Configuration for the `@interrupt` bot in [cloudfoundry.slack.com](https://slack
 
 To change behavior, add or update your team in the [`config` directory](./config), run the [`validate`](./validate) script, and then send a pull request with your improvements.
 
+If you are using Pair.ist with a non-public team:
+
+ * configure the `password` field as `$PAIRIST_TEAM_{NAME}`
+ * share the password with `dberger` so he can add it as an environment variable for the bot
+
 ---
 
     fly -t "$FLY_TARGET" set-pipeline \
