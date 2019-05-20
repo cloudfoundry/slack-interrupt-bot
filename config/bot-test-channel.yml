@@ -4,3 +4,5 @@ delegatebot:
   - target: { channel: GHNH5M3Q9 }
   delegate:
     user: { id: U0FUK0EBH }
+  options:
+    empty_message: Nope. Try again.
