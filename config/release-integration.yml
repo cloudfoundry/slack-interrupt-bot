@@ -19,3 +19,5 @@ delegatebot:
             Chris: U03CV2XMV
             Dave Walter: U08D6EN73
             Sebastian Vidrio: U6WBMK9QW
+  options:
+    empty_message: Sorry, I wasn't able to automagically find an interrupt for you.
