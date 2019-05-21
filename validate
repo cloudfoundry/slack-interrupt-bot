@@ -4,7 +4,7 @@ set -eu
 
 basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-version=0.1.0
+version=0.5.0
 execdir="$basedir/tmp/delegatebot-$version"
 
 if [[ ! -e "$execdir/delegatebot" ]]; then
