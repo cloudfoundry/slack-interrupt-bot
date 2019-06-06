@@ -1,0 +1,29 @@
+---
+delegatebot:
+  watch:
+  - target: { channel: &credhub C3EN0BFC0 }
+  delegate:
+    if:
+      when:
+      - hours: { tz: America/New_York, start: 09:00, end: 18:00 }
+      - day: { tz: America/New_York, days: [ Mon, Tue, Wed, Thu, Fri ] }
+      - not: { date: { tz: America/New_York, dates: [ 2019-01-01, 2019-01-21, 2019-02-18, 2019-05-27, 2019-07-04, 2019-09-02, 2019-11-28, 2019-11-29, 2019-12-25 ] } }
+      then:
+        literalmap:
+          from:
+            pairist:
+              team: therealslimcredhub
+              role: Bat-person
+          users:
+            Andrew:   U8TDZ8VU3
+            Mark:     U02SQ5CJW
+            Marty:    UC1H82QF8
+            Josh:     U1YKRGMDZ
+            Tom:      UG4JCSF5H
+            Victoria: U6W2F82B1
+            Jaron:    UDFK4K0KT
+            Liz:      UHPMJCXGC
+            David:    U9J80QM8F
+            Gemma:    UJYM8FVM0
+  options:
+    empty_message: Sorry, I wasn't able to automagically find an interrupt for you. It may be outside of the CredHub team's working hours. Try @credhub-team in case of an emergency.
