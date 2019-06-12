@@ -18,7 +18,6 @@ delegatebot:
           users:
             Andrew: U0Z8ZQKEJ
             Brendan: UBNA1EDLJ
-            Will: UBD0VVC05
             Alexander: UCLGW13UZ
   options:
     empty_message: Sorry, no interrupt is available right now. The community may be able to help, or feel free to ping again later.
