@@ -41,6 +41,7 @@ delegatebot:
               pairist:
                 team: bosh-europe
                 role: interrupt
+                password: $PAIRIST_TEAM_BOSH_EUROPE
             users:
               Beyhan: U0D8E67LZ
               David: U66SLUVQC
