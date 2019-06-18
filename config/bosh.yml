@@ -40,7 +40,7 @@ delegatebot:
             from:
               pairist:
                 team: bosh-europe
-                role: interrupt
+                role: community
                 password: $PAIRIST_TEAM_BOSH_EUROPE
             users:
               Beyhan: U0D8E67LZ
