@@ -1,0 +1,29 @@
+---
+delegatebot:
+  watch:
+  - target: { channel: &buildpacks C02HWMDUQ }
+  delegate:
+    if:
+      when:
+      - or:
+        - and:
+          - hours: { tz: America/New_York, start: 09:00, end: 18:00 }
+          - day: { tz: America/New_York, days: [ Mon, Tue, Wed, Thu, Fri ] }
+          - not: { date: { tz: America/New_York, dates: [ 2019-01-01, 2019-01-21, 2019-02-18, 2019-05-27, 2019-07-04, 2019-09-02, 2019-11-28, 2019-11-29, 2019-12-25 ] } }
+      then:
+        literalmap:
+          from:
+            pairist:
+              team: cfbuildpacks
+              role: Interrupt
+          users:
+            Chhavi: U2TTUHBC
+            Dan: UCL6FS0HW
+            David: UF9H6CG7Q
+            Forest: U1PMZB0TT
+            Mark: U02SQ5CJW
+            Ryan: U031MLLHA
+            Tim: UN5HFT4M6
+            Zander: U98JBJAPQ
+  options:
+    empty_message: Sorry, we couldn't magically find the buildpacks interrupt.
