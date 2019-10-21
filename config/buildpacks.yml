@@ -13,9 +13,14 @@ delegatebot:
       then:
         literalmap:
           from:
-            pairist:
-              team: cfbuildpacks
-              role: Interrupt
+            union:
+            - literal: { text: "Interrupts are logged here - https://drive.google.com/open?id=1vk8dSnRKGirkHb0vCbaZaTtTNDHVsFQkJCmOrvtbSIs" }
+            - pairist:
+                team: cfbuildpacks
+                role: Interrupt
+            - pairist:
+                team: cfbuildpacks-releng
+                role: Interrupt
           users:
             Chhavi: U2TTUHBCH
             Dan: UCL6FS0HW
