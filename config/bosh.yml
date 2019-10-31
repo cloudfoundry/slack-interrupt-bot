@@ -31,6 +31,7 @@ delegatebot:
               Morgan: U04V9L81Y
               Maya: U03DX27U9
               Jim: U02QZ1E3G
+              Aakash: U03LBJMUS
     - if:
         when:
         - hours: { tz: Europe/Berlin, start: 09:00, end: 18:00 }
