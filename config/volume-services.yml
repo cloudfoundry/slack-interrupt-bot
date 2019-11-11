@@ -4,7 +4,7 @@
 delegatebot:
   watch:
   # channel IDs should start with C
-  - target: { channel: &cf-volume-services C5L34ELCS }
+  - target: { channel: &cf-volume-services C0K0JF319 }
   delegate:
     literalmap:
       from:
@@ -16,8 +16,8 @@ delegatebot:
       # The full story: https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id
       users:
         # user IDs should start with U..
-        Dennis: U0UKGF1KQ
-        Lisa: U1BCSLQQ1
-        Paul: UDU0LPKB2
+        Dennis: U0W2KRES0
+        Lisa: U1BC8UFPZ
+        Paul: U0B3HM7RQ
   options:
     empty_message: Sorry, I got interrupted.  Could not contact the interrupt pair for you.
