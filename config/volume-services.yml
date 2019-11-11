@@ -1,0 +1,23 @@
+---
+# cheat sheet for using the bot: https://sites.google.com/pivotal.io/interrupt-cheat-sheet/home
+# longer discussion : https://www.pivotalk.io/t/a-new-slack-interrupt-bot/29265
+delegatebot:
+  watch:
+  # channel IDs should start with C
+  - target: { channel: &cf-volume-services C5L34ELCS }
+  delegate:
+    literalmap:
+      from:
+        pairist:
+          team: volumeservices
+          track: "Interrupt"
+      # Find user IDs by clicking on the users name as it appears above one of their messages.  Choose 'View Profile'.
+      # Then click on '...' in the right sidebar and 'Copy Member ID'
+      # The full story: https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id
+      users:
+        # user IDs should start with U..
+        Dennis: U0UKGF1KQ
+        Lisa: U1BCSLQQ1
+        Paul: UDU0LPKB2
+  options:
+    empty_message: Sorry, I got interrupted.  Could not contact the interrupt pair for you.
