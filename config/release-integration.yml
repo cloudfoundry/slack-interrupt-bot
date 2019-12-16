@@ -17,8 +17,9 @@ delegatebot:
           users:
             Andrew Costa: UKGS80CG6
             Dave Walter: U08D6EN73
+            Jaskanwal Pawar: U9L02PU1M
             John Ryan: UC5UC9KTL
+            Jen Spinney: U054J9K5W
             Sebastian Vidrio: U6WBMK9QW
-            Weyman Fung: U04CEERCS
   options:
     empty_message: Sorry, I wasn't able to automagically find an interrupt for you.
