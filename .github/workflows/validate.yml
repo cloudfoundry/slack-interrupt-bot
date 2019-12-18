@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+  push:
+    branches:
+    - master
+
+jobs:
+  validate:
+    name: Validate Config Files
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Download
+      uses: docker://dpb587/gget
+      with:
+        args: --exec github.com/dpb587/slack-delegate-bot delegatebot=delegatebot-*-linux-amd64
+    - name: Validate
+      id: validate
+      run: |
+        ./delegatebot \
+          --config=./config/*.yml \
+          --config=config/default.delegatebot \
+          validate
