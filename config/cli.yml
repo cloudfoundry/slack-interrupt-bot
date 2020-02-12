@@ -3,6 +3,7 @@ delegatebot:
   watch:
   - target: { channel: &cli C032824SM }
   - target: { channel: &cli-dev-internal CDVP0651P }
+  - target: { channel: &v3-acceleration-team CCRLX88DD }
   delegate: &interrupts
     if:
       when:
