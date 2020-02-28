@@ -18,8 +18,11 @@ delegatebot:
           users:
             Amin: U077YLS56
             Edwin: U092YCSRG
+            John: U056ACK7P
             Maria: U043GTWND
-            Nick: U0E90AA06
+            Mark: U05661PTK
+            Robert: U0J1NFPUG
             Sunjay: U1QBM6CUD
+            Will: U064Q3Z39
   options:
     empty_message: Sorry, no interrupt is available right now. The community may be able to help, or feel free to ping again later.
