@@ -18,11 +18,11 @@ delegatebot:
               role: interrupt
           users:
             Andrew: U0Z8ZQKEJ
-            Brendan: UBNA1EDLJ
             Alexander: UCLGW13UZ
-            Steve: U0W3640SW
-            Jenna: UMZ7PEESC
+            Chris: U07BQKTRP
             Eric: U0GQNFF8R
+            Jenna: UMZ7PEESC
+            Steve: U0W3640SW            
   options:
     empty_message: Sorry, no interrupt is available right now. The community may be able to help, or feel free to ping again later.
 
