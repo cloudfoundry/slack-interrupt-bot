@@ -16,10 +16,12 @@ delegatebot:
               role: Community
           users:
             Andrew Costa: UKGS80CG6
+            Angela Chin: U21GJG015
             Dave Walter: U08D6EN73
-            Jaskanwal Pawar: U9L02PU1M
-            John Ryan: UC5UC9KTL
+            Dmitriy Kalinin: U03NHM643
+            James Pollard: UFTG3RM5M
             Jen Spinney: U054J9K5W
+            John Ryan: UC5UC9KTL
             Sebastian Vidrio: U6WBMK9QW
   options:
     empty_message: Sorry, I wasn't able to automagically find an interrupt for you.

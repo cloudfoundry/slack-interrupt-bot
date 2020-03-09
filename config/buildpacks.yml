@@ -22,14 +22,14 @@ delegatebot:
                 team: cfbuildpacks-releng
                 role: Interrupt
           users:
-            Chhavi: U2TTUHBCH
             Dan: UCL6FS0HW
-            David: UF9H6CG7Q
             Forest: U1PMZB0TT
             Garima: U2LAQS9RQ
+            Kenny: UBM470KH9
             Mark: U02SQ5CJW
+            Marty: UC1H82QF8
             Ryan: U031MLLHA
             Tim: UN5HFT4M6
-            Zander: U98JBJAPQ
+            Arjun: UBP6RMANS
   options:
     empty_message: Sorry, we couldn't magically find the buildpacks interrupt.
