@@ -19,9 +19,8 @@ delegatebot:
           users:
             Andrew: U0Z8ZQKEJ
             Alexander: UCLGW13UZ
-            Chris: U07HPTPTR
-            Eric: U0GQNFF8R
             Jenna: UMZ7PEESC
+            Nick: UV5NRP803
             Steve: U0W3640SW            
   options:
     empty_message: Sorry, no interrupt is available right now. The community may be able to help, or feel free to ping again later.
