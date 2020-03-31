@@ -11,7 +11,7 @@ jobs:
     - name: Download slack-delegate-bot
       uses: docker://dpb587/gget
       with:
-        args: --exec github.com/dpb587/slack-delegate-bot delegatebot=delegatebot-*-linux-amd64
+        args: --exec github.com/dpb587/slack-delegate-bot@v0.9.0 delegatebot=delegatebot-*-linux-amd64
     - name: Validate
       id: validate
       run: |
