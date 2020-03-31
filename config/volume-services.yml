@@ -10,7 +10,7 @@ delegatebot:
       from:
         pairist:
           team: volumeservices
-          track: "Interrupt"
+          role: Interrupt
       # Find user IDs by clicking on the users name as it appears above one of their messages.  Choose 'View Profile'.
       # Then click on '...' in the right sidebar and 'Copy Member ID'
       # The full story: https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id
