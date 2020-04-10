@@ -17,7 +17,6 @@ delegatebot:
       # The full story: https://stackoverflow.com/questions/40940327/what-is-the-simplest-way-to-find-a-slack-team-id-and-a-channel-id
       users:
         # user IDs should start with U..
-        Dennis: U0W2KRES0
         Lisa: U1BC8UFPZ
         Paul: U0B3HM7RQ
   options:
