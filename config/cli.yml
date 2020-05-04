@@ -17,11 +17,11 @@ delegatebot:
               team: cli
               role: interrupt
           users:
-            Andrew: U0Z8ZQKEJ
             Alexander: UCLGW13UZ
             Jenna: UMZ7PEESC
             Nick: UV5NRP803
-            Steve: U0W3640SW            
+            Steve: U0W3640SW
+            James: UENAH6TE3
   options:
     empty_message: Sorry, no interrupt is available right now. The community may be able to help, or feel free to ping again later.
 
