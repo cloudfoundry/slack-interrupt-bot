@@ -9,35 +9,50 @@ delegatebot:
       - day: { tz: America/Los_Angeles, days: [ Mon, Tue, Wed, Thu, Fri ] }
       - not: { date: { tz: America/Los_Angeles, dates: [ 2019-01-01, 2019-01-21, 2019-02-18, 2019-05-27, 2019-07-04, 2019-09-02, 2019-11-28, 2019-11-29, 2019-12-25 ] } }
       then:
-        literalmap:
-          from:
-            pairist:
-              team: networking-interrupt
-              role: interrupt
-          users:
-            Aidan: U8WQW0FV0
-            Alex: UDF8SD3RS
-            Amelia: U0HLZCLLS
-            Angela: U21GJG015
-            Bruce: U8GLH9Y5B
-            Christian: U0MM2LYRY
-            Claire: UGQ4YA5C6
-            Clay: UBWM6LJPQ
-            Dave: U0K8XEG2K
-            Dolfo: UGCJYBBB2
-            Edwin: U092YCSRG
-            Eli: UB917J3BK
-            Gabe: U0344R97W
-            Jen: U054J9K5W 
-            Josh: U8DLATS12
-            Kauana: UB9H1EWAF
-            Keshav: UBA2YCUQ4
-            Mike: UKQ6ZG29Z
-            Nitya: U6LER66MV
-            Pranay: UMQCR0CTW
-            Shannon: U039X1D8H
-            Tim: U2B7HKVAS
-            Utako: U047JRCG7
+        coalesce:
+        - if:
+            when:
+            - day: { days: [ Mon, Fri ], tz: America/Los_Angeles }
+            then:
+              literalmap:
+                from:
+                  pairist:
+                    team: cf-k8s-networking
+                    role: "Interrupt [Mon/Fri]"
+                users: &usrs
+                  Aidan: U8WQW0FV0
+                  Alex: UDF8SD3RS
+                  Amelia: U0HLZCLLS
+                  Angela: U21GJG015
+                  Bruce: U8GLH9Y5B
+                  Cang: U0MM2LYRY
+                  Claire: UGQ4YA5C6
+                  Clay: UBWM6LJPQ
+                  Dave: U0K8XEG2K
+                  Dolfo: UGCJYBBB2
+                  Edwin: U092YCSRG
+                  Eli: UB917J3BK
+                  Gabe: U0344R97W
+                  Jen: U054J9K5W
+                  Josh: U8DLATS12
+                  Kauana: UB9H1EWAF
+                  Keshav: UBA2YCUQ4
+                  Mike: UKQ6ZG29Z
+                  Nitya: U6LER66MV
+                  Pranay: UMQCR0CTW
+                  Shannon: U039X1D8H
+                  Tim: U2B7HKVAS
+                  Utako: U047JRCG7
+        - if:
+            when:
+            - day: { days: [ Tue, Wed, Thu ], tz: America/Los_Angeles }
+            then:
+              literalmap:
+                from:
+                  pairist:
+                    team: tiger-eyes
+                    role: "Interrupt [Tues/Wed/Thurs]"
+                users: *usrs
       else:
         literal:
           text: Hey there! If you do not get an answer beforehand, try pinging us again during core hours (9am - 5pm PT).
