@@ -1,0 +1,28 @@
+---
+delegatebot:
+  watch:
+  - target: { channel: &bbr C6D6N3PBL }
+  delegate:
+    if:
+      when:
+      - hours: { tz: Europe/London, start: 09:00, end: 17:00 }
+      - day: { tz: Europe/London, days: [ Mon, Tue, Wed, Thu, Fri ] }
+      - not: { date: { tz: Europe/London, dates: [ 2019-08-26, 2019-12-25, 2019-12-26, 2020-01-01, 2020-04-10, 2020-04-13, 2020-05-08, 2020-05-25, 2020-08-31, 2020-12-25, 2020-12-28, 2020-02-11, 2020-02-12, 2020-02-13 ] } }
+      then:
+        literalmap:
+          from:
+            pairist:
+              team: platform-recovery
+              role: interrupt
+              password: $PAIRIST_TEAM_PLATFORM_RECOVERY
+          users:
+            James: US3UL1WQK
+            Jake: U2E7SHSTB
+            Gareth: U09JDLQTD
+            Neil: U8U2YMV4K
+            Scott: U0L1JT87K
+      else:
+        literal:
+          text: Hey there! If you do not get an answer beforehand, try pinging us again during core hours (9am - 5pm UK time). We also won't be in if it's a British public holiday.
+  options:
+    empty_message: Sorry, I wasn't able to automagically find an interrupt for you. An interrupt pair may not be assigned at the moment.
