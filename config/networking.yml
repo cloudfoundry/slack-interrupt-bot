@@ -18,7 +18,7 @@ delegatebot:
                 from:
                   pairist:
                     team: cf-k8s-networking
-                    role: "Interrupt/Community [Mon/Fri]"
+                    role: "Interrupt/Community"
                 users: &usrs
                   Aidan: U8WQW0FV0
                   Alex: UDF8SD3RS
