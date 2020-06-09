@@ -1,18 +1,11 @@
-Configuration for the `@interrupt` bot in [cloudfoundry.slack.com](https://slack.cloudfoundry.org/).
+# slack-interrupt-bot
 
- * running with [dpb587/slack-delegate-bot](https://github.com/dpb587/slack-delegate-bot)
- * deployed on [Pivotal Web Services](https://run.pivotal.io/)
+Hi – configuration management for the `@interrupt` bot has been migrated to a new app-specific [management site](https://interrupt.ist/). Find your team there and then you can make changes by visiting its Settings page. The management site is still evolving; if you need any help or have feedback, please share your thoughts with `@dberger`.
 
-To change behavior, add or update your team in the [`config` directory](./config), run the [`validate`](./validate) script, and then send a pull request with your improvements.
+Moving away from this git repository-based approach was motivated by:
 
-If you are using Pair.ist with a non-public team:
-
- * configure the `password` field as `$PAIRIST_TEAM_{NAME}`
- * share the password with `dberger` so he can add it as an environment variable for the bot
-
----
-
-    fly -t "$FLY_TARGET" set-pipeline \
-      --pipeline cloudfoundry-slack-interrupt-bot \
-      --config ~/workspace/src/github.com/dpb587/slack-delegate-bot/examples/cf-app/concourse.yml \
-      --load-vars-from <( lpass show --notes "concourse: cloudfoundry-slack-interrupt-bot" )
+ * better self-management of team configuration (no PR steps or blocked merges);
+ * broader access for managing channels across workspaces (no GitHub-org membership limitations);
+ * improving support for testing configuration (integrated config simulation);
+ * consolidating reporting and management features (no more manually-updated Data Studio dashboard); and
+ * to (eventually) make the app easier to scale to other workspaces.
